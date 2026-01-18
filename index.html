@@ -102,58 +102,26 @@
         <div class="col-lg-10 mx-auto">
           <h2>About Me</h2>
           <p class="lead mb-5 text-left">
-            • I'm a Data Analyst and Programmer in the Twin Cities Metro area with 7 years of experience in the financial services industry.<br>
-            • I've worked for Wells Fargo and through Robert Half as a contractor handling data and developing solutions.<br>
+            • I am a Data Analyst and Programmer in the Twin Cities Metro area with 7 years of experience in the financial services industry.<br>
+            • I have worked for Wells Fargo and through Robert Half as a contractor handling data and creating software solutions.<br>
             • I have a B.S. in Mathematics from the University of Minnesota Twin Cities.<br>
-            <br><br>
-            
-            Current focus:<br>
-            <b>• Continue to provide exceptional value to Ecolab as a hard working, resourceful, and results driven data analyst</b><br>
-            • Studying to obtain a certification for <u><a href = "https://training.linuxfoundation.org/skillcred/bash/" target = "_blank">BASH Scripting</a></u> - January 2026<br>
-            • Completing this <u><a href = "https://www.udemy.com/course/data-science-methods-and-algorithms-2024/?couponCode=CP251129CMG1" target = "_blank">data science</a></u> course on Udemy - January 2026<br>
-            • Studying to obtain Professional Scrum Product Owner certification from <u><a href = "https://www.scrum.org/assessments/professional-scrum-product-owner-i-certification" target = "_blank">Scrum.org</a></u>- February 2026<br><br>            
-            <!--Near-future focus:<br> -->
+            • I have previously held a <u><a href = "https://www.finra.org/registration-exams-ce/qualification-exams/series7" target = "_blank">Series 7 license with FINRA</a></u>.<br>
+            <br>
+
+            <br>
+            My Goals:<br>
+            • Provide exceptional value as a hard working, resourceful, and results-driven analyst with a desire to solve problems, remediate errors, and improve processes.<br>
+            • Continue to develop my data analysis and programming skills. <br>
             <br>
              
             <br>
-            Long term focus:<br>
-            • Become a veteran Data Scientist<br><br>
-
-            In my spare time:<br>
-            • Collecting and listening to classic records<br>
-            • Training my dog Bubbles in agility<br>
-            • Adding more pins to this map - places I have gone hiking or canoeing:<br>
-            <div id='map'></div>
-            <script>
-            mapboxgl.accessToken = 'pk.eyJ1IjoicGluZS10cmVlIiwiYSI6ImNrbXd1amQ5MTBpbzMydmxkd2J4NHdlaTAifQ.-e6mLczhCZb8MYjEi1XOrw'; // replace this with your access token
-            var map = new mapboxgl.Map({
-              container: 'map',
-              style: 'mapbox://styles/pine-tree/ckmwvr0hl096p17o4tcczhcyx', // replace this with your style URL
-              center: [-98.383837, 49.432643],
-              zoom: 1.8
-            });
-            // code from the next step will go here
-            map.on('click', function(e) {
-              var features = map.queryRenderedFeatures(e.point, {
-                layers: ['my-places'] // replace this with the name of the layer
-              });
-
-              if (!features.length) {
-                return;
-              }
-
-              var feature = features[0];
-
-              var popup = new mapboxgl.Popup({ offset: [0, -15] })
-                .setLngLat(feature.geometry.coordinates)
-                .setHTML('<h3>' + feature.properties.title + '</h3><p>' + feature.properties.description + '</p>')
-                .addTo(map);
-            });
-
-            </script>
+            In my spare time I like:<br>
+            • Listening to vinyl records<br>
+            • Building my own mechanical keyboard<br>
+            • Making woodworking projects by hand like this coaster inspired by the flag of Chicago<br>
+            <br>
+          <img class="img-fluid" src="img/about-me-wood.jpg" alt="">
           <br><br><br>
-          <img class="img-fluid" src="vinyl.gif" alt="">
-          <br><br>
           </p>
           <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What I Offer</a>
         </div>
